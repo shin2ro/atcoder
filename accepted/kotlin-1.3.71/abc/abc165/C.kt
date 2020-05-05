@@ -1,25 +1,13 @@
-import kotlin.math.max
-
 fun main() {
     val (n, m, q) = readLine()!!.split(' ').map { it.toInt() }
     val qs = (0 until q).map { readLine()!!.split(' ').map { it.toInt() } }
 
-    fun f(list: List<Int>): Int {
-        if (list.size == n) {
-            val l = list.reversed()
-            var score = 0
-            for ((a, b, c, d) in qs) {
-                if (l[b - 1] - l[a - 1] == c) score += d
-            }
-            return score
+    fun dfs(xs: List<Int>): Int {
+        if (xs.size == n + 1) {
+            return qs.map { (a, b, c, d) -> if (xs[b] - xs[a] == c) d else 0 }.sum()
         }
-        var ans = 0
-        val x = if (list.isEmpty()) m else list.last()
-        for (i in 1..x) {
-            ans = max(ans, f(list + listOf(i)))
-        }
-        return ans
+        return (xs.last()..m).map { dfs(xs + it) }.max()!!
     }
 
-    println(f(emptyList()))
+    println(dfs(listOf(1)))
 }
