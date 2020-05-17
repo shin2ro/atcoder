@@ -84,14 +84,16 @@ class Comb(n: Int) {
 
 fun main() {
     val cb = Comb(200000)
-    val (n, m, k) = readLine()!!.split(' ').map { it.toInt() }
+    val (n, m, k) = run {
+        val (n, m, k) = readLine()!!.split(' ').map { it.toInt() }
+        Triple(n, m.toLong(), k)
+    }
 
-    var ans = ModInt(m.toLong()).pow(n.toLong())
-    var x = ModInt(m.toLong())
-    for (i in 0 until (n - 1 - k)) {
-        val y = ModInt(cb.comb(n - 1, i))
-        ans -= (x * y)
-        x *= ModInt(m - 1L)
+    var ans = ModInt(0L)
+    for (i in 0..k) {
+        val x1 = ModInt(cb.comb(n - 1, n - 1 - i))
+        val x2 = ModInt(m) * ModInt(m - 1).pow((n - 1 - i).toLong())
+        ans += x1 * x2
     }
     println(ans)
 }
