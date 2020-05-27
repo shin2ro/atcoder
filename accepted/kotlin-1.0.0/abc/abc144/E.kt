@@ -8,14 +8,17 @@ fun main(args: Array<String>) {
     var l = 0L
     var r = 1e12.toLong()
     while (l < r) {
-        val x = l + (r - l) / 2
+        val m = l + (r - l) / 2
 
-        val s = (0 until n).map { Math.max(a[it] - (x / f[it]), 0) }.sum()
+        var x = 0L
+        for (i in 0 until n) {
+            x += Math.max(a[i] - (m / f[i]), 0)
+        }
 
-        if (s <= k) {
-            r = x
+        if (x <= k) {
+            r = m
         } else {
-            l = x + 1
+            l = m + 1
         }
     }
 
