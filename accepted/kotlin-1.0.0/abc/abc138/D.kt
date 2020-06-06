@@ -3,11 +3,11 @@ import java.util.*
 fun main(args: Array<String>) {
     val (n, q) = readLine()!!.split(' ').map { it.toInt() }
 
-    val g = mutableMapOf<Int, MutableList<Int>>()
+    val g = Array(n + 1) { mutableListOf<Int>() }
     repeat(n - 1) {
         val (a, b) = readLine()!!.split(' ').map { it.toInt() }
-        g.getOrPut(a) { mutableListOf() }.add(b)
-        g.getOrPut(b) { mutableListOf() }.add(a)
+        g[a].add(b)
+        g[b].add(a)
     }
 
     val cnt = IntArray(n + 1)
@@ -19,15 +19,15 @@ fun main(args: Array<String>) {
     val visited = BooleanArray(n + 1) { false }
     val stack = ArrayDeque<Int>()
     stack.addLast(1)
-    visited[1] = true
 
     while (stack.isNotEmpty()) {
         val v = stack.removeLast()
-        for (u in g[v]!!) {
+        visited[v] = true
+
+        for (u in g[v]) {
             if (visited[u]) continue
             cnt[u] = cnt[v] + cnt[u]
             stack.addLast(u)
-            visited[u] = true
         }
     }
 
