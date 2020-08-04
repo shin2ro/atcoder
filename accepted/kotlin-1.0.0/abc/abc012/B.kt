@@ -6,3 +6,4 @@ fun main(args: Array<String>) {
     val ans = listOf(h, m, s).joinToString(":") { it.toString().padStart(2, '0') }
     println(ans)
 }
+

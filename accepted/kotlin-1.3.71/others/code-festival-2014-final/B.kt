@@ -5,3 +5,4 @@ fun main() {
             .sum()
     println(ans)
 }
+

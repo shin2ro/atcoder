@@ -3,3 +3,4 @@ fun main(args: Array<String>) {
     val s = readLine()!!.split(' ')
     println(if (s.toSet().size == 3) "Three" else "Four")
 }
+

@@ -12,3 +12,4 @@ fun main() {
 
     println(ss.filter { it == 0 }.count())
 }
+

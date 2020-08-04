@@ -43,3 +43,4 @@ fun main(args: Array<String>) {
 
     println(ans.slice(1..n).joinToString("\n"))
 }
+

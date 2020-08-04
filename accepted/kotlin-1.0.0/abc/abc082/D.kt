@@ -16,3 +16,4 @@ fun main(args: Array<String>) {
 
     println(if (x == 0 && y == 0) "Yes" else "No")
 }
+

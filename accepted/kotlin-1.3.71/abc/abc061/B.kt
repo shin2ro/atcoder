@@ -8,3 +8,4 @@ fun main() {
     }
     println(roads.slice(1..n).joinToString("\n"))
 }
+

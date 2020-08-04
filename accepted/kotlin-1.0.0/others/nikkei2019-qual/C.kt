@@ -9,3 +9,4 @@ fun main(args: Array<String>) {
     val ans = xs.mapIndexed { index, pair -> if (index % 2 == 0) pair.first else -pair.second }.sum()
     println(ans)
 }
+

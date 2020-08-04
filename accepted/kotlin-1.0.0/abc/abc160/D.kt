@@ -13,3 +13,4 @@ fun main(args: Array<String>) {
     }
     println(ans.slice(1 until n).joinToString("\n"))
 }
+

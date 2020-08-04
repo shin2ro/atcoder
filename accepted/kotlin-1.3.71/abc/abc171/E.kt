@@ -4,3 +4,4 @@ fun main() {
     val b = a.reduce { acc, i -> acc xor i }
     println(a.map { b xor it }.joinToString(" "))
 }
+

@@ -10,3 +10,4 @@ fun main(args: Array<String>) {
             .joinToString("\n") { if (k - (q - it) > 0) "Yes" else "No" }
             .let { println(it) }
 }
+

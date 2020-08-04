@@ -5,3 +5,4 @@ fun main(args: Array<String>) {
     val ans = (0 until h).joinToString("\n") { if (it < b) s1 else s2 }
     println(ans)
 }
+

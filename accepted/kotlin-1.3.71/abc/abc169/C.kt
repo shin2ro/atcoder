@@ -7,3 +7,4 @@ fun main() {
     }
     println((a * b).setScale(0, RoundingMode.FLOOR))
 }
+

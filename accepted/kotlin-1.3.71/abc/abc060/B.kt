@@ -16,3 +16,4 @@ fun main() {
 
     println(if (ans) "YES" else "NO")
 }
+

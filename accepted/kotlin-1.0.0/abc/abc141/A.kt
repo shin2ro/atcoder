@@ -3,3 +3,4 @@ fun main(args: Array<String>) {
     val s = readLine()!!
     println(w[(w.indexOf(s) + 1) % 3])
 }
+

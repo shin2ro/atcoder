@@ -3,3 +3,4 @@ fun main() {
     val ans = (a..b).count { it == it.toString().reversed().toInt() }
     println(ans)
 }
+

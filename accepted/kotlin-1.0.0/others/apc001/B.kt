@@ -10,3 +10,4 @@ fun main(args: Array<String>) {
     }
     println(if (cnt >= 0L) "Yes" else "No")
 }
+

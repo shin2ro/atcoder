@@ -7,3 +7,4 @@ fun main() {
     val z = min(c, k - x - y)
     println(x - z)
 }
+

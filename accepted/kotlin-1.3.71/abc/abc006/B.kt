@@ -12,3 +12,4 @@ fun main() {
     val n = readLine()!!.toInt()
     println(dp[n])
 }
+

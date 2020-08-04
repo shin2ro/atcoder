@@ -16,3 +16,4 @@ for bits in range(1 << N):
         ans = min(cost, ans) if ans >= 0 else cost
 
 print(ans)
+

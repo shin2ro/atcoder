@@ -8,3 +8,4 @@ fun main(args: Array<String>) {
     mx = Math.max(a.first() + k - a.last(), mx)
     println(k - mx)
 }
+

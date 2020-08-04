@@ -21,3 +21,4 @@ fun main() {
             .max()
             .let { println(it) }
 }
+

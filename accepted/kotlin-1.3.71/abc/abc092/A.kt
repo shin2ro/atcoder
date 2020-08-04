@@ -7,3 +7,4 @@ fun main() {
     val d = readLine()!!.toInt()
     println(min(a, b) + min(c, d))
 }
+

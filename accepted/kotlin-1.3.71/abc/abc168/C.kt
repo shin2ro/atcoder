@@ -10,3 +10,4 @@ fun main() {
     val c = a.pow(2) + b.pow(2) - Math.cos(r) * 2 * a * b
     println(sqrt(c))
 }
+

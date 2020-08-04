@@ -3,3 +3,4 @@ fun main(args: Array<String>) {
     val s = readLine()!!
     println(if (a < 3200) "red" else s)
 }
+

@@ -4,3 +4,4 @@ fun main(args: Array<String>) {
     val ans = if (String(s.toCharArray().sortedArray()) < String(t.toCharArray().sortedArrayDescending())) "Yes" else "No"
     println(ans)
 }
+

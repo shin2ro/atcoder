@@ -3,3 +3,4 @@ fun main(args: Array<String>) {
     val ans = (l / 3.0).let { it * it * it }
     println(ans)
 }
+

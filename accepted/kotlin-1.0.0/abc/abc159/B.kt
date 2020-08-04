@@ -8,3 +8,4 @@ fun main(args: Array<String>) {
 
     println(if (f(s) && f(s.slice(0 until n / 2)) && f(s.slice(n / 2 + 1 until n))) "Yes" else "No")
 }
+

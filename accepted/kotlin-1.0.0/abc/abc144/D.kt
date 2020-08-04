@@ -7,3 +7,4 @@ fun main(args: Array<String>) {
     }
     println(rad / Math.PI / 2 * 360)
 }
+

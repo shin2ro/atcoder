@@ -13,3 +13,4 @@ fun main() {
 
     println((r.sorted() + b.sorted()).joinToString("\n"))
 }
+

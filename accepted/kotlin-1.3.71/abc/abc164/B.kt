@@ -6,3 +6,4 @@ fun main() {
     }
     println(if (c > 0) "No" else "Yes")
 }
+

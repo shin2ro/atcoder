@@ -18,3 +18,4 @@ fun main() {
 
     println(if (ans >= 3) ans else 0)
 }
+

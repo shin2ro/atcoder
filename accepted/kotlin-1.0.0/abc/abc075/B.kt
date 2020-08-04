@@ -20,3 +20,4 @@ fun main(args: Array<String>) {
     }
     println(grid.joinToString("\n") { String(it) })
 }
+

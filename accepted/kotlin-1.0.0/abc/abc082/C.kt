@@ -8,3 +8,4 @@ fun main(args: Array<String>) {
     val ans = cnt.map { if (it.value - it.key >= 0)  it.value - it.key else it.value }.sum()
     println(ans)
 }
+

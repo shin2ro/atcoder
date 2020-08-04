@@ -13,3 +13,4 @@ fun main() {
     println("100 100")
     println(grid.joinToString("\n") { it.joinToString("") })
 }
+

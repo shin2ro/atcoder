@@ -4,3 +4,4 @@ fun main() {
     val ans = s.indices.count { s[it] != t[it] }
     println(ans)
 }
+

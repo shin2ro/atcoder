@@ -4,3 +4,4 @@ fun main() {
     readLine()!!.split(' ').map { it.toInt() }.forEach { a[it]++ }
     println(a.slice(1..n).joinToString("\n"))
 }
+

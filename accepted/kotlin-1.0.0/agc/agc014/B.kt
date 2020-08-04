@@ -8,3 +8,4 @@ fun main(args: Array<String>) {
     }
     println(if (cnt.all { it % 2 == 0 }) "YES" else "NO")
 }
+

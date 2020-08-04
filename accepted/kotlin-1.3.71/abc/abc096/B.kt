@@ -4,3 +4,4 @@ fun main() {
     val m = xs.max()!!
     println(xs.sum() - m + m * (1 shl k))
 }
+

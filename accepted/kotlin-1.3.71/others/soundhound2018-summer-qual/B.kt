@@ -4,3 +4,4 @@ fun main() {
     val ans = (s.indices step w).map { s[it] }.toCharArray()
     println(ans)
 }
+

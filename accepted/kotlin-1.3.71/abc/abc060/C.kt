@@ -9,3 +9,4 @@ fun main() {
     ans += t
     println(ans)
 }
+

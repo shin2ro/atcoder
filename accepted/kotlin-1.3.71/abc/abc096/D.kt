@@ -18,3 +18,4 @@ fun main() {
     val primes = sieve(55555)
     println(primes.filter { it % 5 == 1 }.take(n).joinToString(" "))
 }
+

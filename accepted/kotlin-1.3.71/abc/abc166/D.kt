@@ -18,3 +18,4 @@ fun main() {
     val (a, b) = solve(x, 1000)
     println("$a $b")
 }
+

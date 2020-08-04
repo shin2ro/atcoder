@@ -33,3 +33,4 @@ fun main(args: Array<String>) {
 
     println(cnt.slice(1..n).joinToString(" "))
 }
+

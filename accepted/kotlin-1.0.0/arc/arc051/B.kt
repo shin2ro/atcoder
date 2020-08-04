@@ -6,3 +6,4 @@ fun main(args: Array<String>) {
     }
     println("${dp[k + 1]} ${dp[k]}")
 }
+

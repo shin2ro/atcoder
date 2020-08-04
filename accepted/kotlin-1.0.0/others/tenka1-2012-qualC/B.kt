@@ -46,3 +46,4 @@ fun main(args: Array<String>) {
     }
     println(if (discarded.size == 0) 0 else discarded.joinToString(""))
 }
+

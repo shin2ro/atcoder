@@ -14,3 +14,4 @@ fun main(args: Array<String>) {
 
     println(queue.removeFirst())
 }
+

@@ -18,3 +18,4 @@ fun main() {
 
     println(n - dp.lowerBound(INF))
 }
+

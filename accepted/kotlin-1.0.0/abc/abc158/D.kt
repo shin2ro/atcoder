@@ -27,3 +27,4 @@ fun main(args: Array<String>) {
 
     println(cs.slice(l until r).let { if (d == 0) it else it.reversed() }.joinToString(""))
 }
+

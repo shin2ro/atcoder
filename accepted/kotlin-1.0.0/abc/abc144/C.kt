@@ -16,3 +16,4 @@ fun main(args: Array<String>) {
     val n = readLine()!!.toLong()
     println(sequence(n).map { it.first + it.second - 2 }.min())
 }
+

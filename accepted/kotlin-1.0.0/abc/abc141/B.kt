@@ -4,3 +4,4 @@ fun main(args: Array<String>) {
             .all { if (it.index % 2 == 0) it.value != 'L' else it.value != 'R' }
             .let { println(if (it) "Yes" else "No") }
 }
+

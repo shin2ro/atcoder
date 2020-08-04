@@ -3,3 +3,4 @@ fun main() {
     val p = readLine()!!.split(' ').map { it.toInt() }
     println(p.sorted().take(k).sum())
 }
+
